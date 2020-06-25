@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint = "Enter IP Address"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="75dp"
+            android:id="@+id/ipaddress" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter port"
+            android:ems="10"
+            android:id="@+id/port"
+            android:layout_below="@+id/ipaddress"
+            android:layout_alignStart="@+id/ipaddress"
+            android:layout_marginTop="41dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter Frequency"
+            android:ems="10"
+            android:id="@+id/frequency"
+            android:layout_below="@+id/port"
+            android:layout_alignStart="@+id/port"
+            android:layout_marginTop="41dp"
+            />
+
+        <Button
+            android:text="SAVE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mqtt_button"
+            android:layout_marginTop="82dp"
+            android:minWidth="200dip"
+            android:layout_below="@+id/frequency"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>
